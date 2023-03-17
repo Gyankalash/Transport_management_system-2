@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Management System</title>
+    <link rel="stylesheet" href="StudentInfo.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">My Info</a>
+        <a href="#">All Students</a>
+        <a href="#">Change Password</a>
+        <a href="#">Logout</a>
+    </div>
+    <div class="top">
+        <div class="image header">
+            <img src="./Resources/GIS Logo.png" alt="" onclick="openNav()" height="143px" width="140px" />
+        </div>
+        <div class="header welcomeText">
+            <div class="adminHeading">
+                <h2>Welcome , Admin !</h2>
+            </div>
+            <input type="text" placeholder="Search Here" width="100%" class="search" />
+        </div>
+    </div>
+    <h3 class="stInfoText">Student Information</h3>
+    <div class="container">
+        <img src="./Resources/sampleStudent.jpg" alt="" width="266px" height="234px" class="stImage">
+        <div class="adminDetails">
+            <p><b class="InputAdmin">Name :</b><span class="OutputAdmin">Devyanshu</span></p>
+            <p><b class="InputAdmin">Gender :</b><span class="OutputAdmin">Male</span> </p>
+            <p><b class="InputAdmin">Date of birth :</b><span class="OutputAdmin">10 Aug 2022</span></p>
+            <p><b class="InputAdmin">Class :</b><span class="OutputAdmin">10</span></p>
+            <p><b class="InputAdmin">Section :</b><span class="OutputAdmin">B</span></p>
+            <p><b class="InputAdmin">Phone number :</b><span class="OutputAdmin">8218551295</span></p>
+            <p><b class="InputAdmin">Father's Name :</b><span class="OutputAdmin">MR ABC</span></p>
+            <p><b class="InputAdmin">Mother's Name :</b><span class="OutputAdmin">MRS ABC</span></p>
+            <p><b class="InputAdmin">Bus Number :</b><span class="OutputAdmin">10</span></p>
+            <p><b class="InputAdmin">Bus Route :</b><span class="OutputAdmin">School-Ghantaghr-CourtRoad-Awas
+                    Vikas</span></p>
+                    <div class="icons">
+            <a href="#">
+                <div class="editClass editImage">
+
+                    <img src="./Resources/edit icon.png" alt="" height="50px" width="50px" />
+                </div>
+                <div class="editClass">
+                    <span class="edit">Edit Information</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="deleteClass">
+                    <img src="./Resources/delete icon.png" alt="" height="50px" width="50px" />
+                </div>
+                <div class="deleteClass">
+                    <span class="delete">Delete Information</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="feesDetails">
+                    <img src="./Resources/Payment logo.png" alt="" height="50px" width="50px"/>
+                </div>
+                <div class="feesDetails">
+                    <span class="fees">Check Payment History</span>
+                </div>
+            </a>
+        </div>
+        </div>
+        
+    </div>
+
+</body>
+<script>
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

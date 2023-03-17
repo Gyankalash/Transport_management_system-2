@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="adminInfo.css" />
+  <title>Transport Management System</title>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" class="navText">My Info</a>
+    <a href="#" class="navText">All Students</a>
+    <a href="#" class="navText">Change Password</a>
+    <a href="#" class="navText">Log Out</a>
+  </div>
+  <div class="top">
+    <div class="image header">
+      <img src="./Resources/GIS Logo.png" alt="" onclick="openNav()" height="143px" width="140px" />
+    </div>
+    <div class="header welcomeText">
+      <div class="adminHeading">
+        <h2>Welcome , Admin !</h2>
+      </div>
+      <input type="text" placeholder="Search Here" width="100%" class="search" />
+    </div>
+  </div>
+  <div>
+    <h3 class="infoText">ADMIN INFORMATION</h3>
+  </div>
+  <div class="admin">
+    <div class="adminContent">
+      <img src="./Resources/sampleStudent.jpg" alt="" class="student" />
+      <div class="adminDetails">
+        <p><b class="InputAdmin">Name :</b><span class="OutputAdmin">Devyanshu</span></p>
+        <p><b class="InputAdmin">Gender :</b><span class="OutputAdmin">Male</span> </p>
+        <p><b class="InputAdmin">Date of birth :</b><span class="OutputAdmin">10 Aug 2022</span></p>
+        <p><b class="InputAdmin">Email :</b><span class="OutputAdmin">devyanshugagneja@gmail.com</span></p>
+        <p><b class="InputAdmin">Phone number :</b><span class="OutputAdmin">8218551295</span></p>
+        <p><b class="InputAdmin">Cabin Number :</b><span class="OutputAdmin"> AB-405</span></p>
+        <a href="#">
+          <div class="editClass">
+
+            <img src="./Resources/edit icon.png" alt="" height="50px" width="50px" />
+          </div>
+          <div class="editClass">
+            <span class="edit">Edit Information</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="deleteClass">
+            <img src="./Resources/delete icon.png" alt="" height="50px" width="50px" />
+          </div>
+          <div class="deleteClass">
+            <span class="delete">Delete Information</span>
+          </div>
+      </div>
+      </a>
+    </div>
+</body>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+</html>
