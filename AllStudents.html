@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transport management System</title>
+    <link rel="stylesheet" href="AllStudents.css">
+</head>
+<body>
+    
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="adminInfo.html" class="navText">My Info</a>
+		<a href="AllStudents.html" class="navText">All Students</a>
+		<a href="ChangePassword.html" class="navText">Change Password</a>
+		<a href="#" class="navText">Log Out</a>
+	  </div>
+<div class="top">
+    <div class="image header">
+        <img src="./Resources/GIS Logo.png" alt="" onclick="openNav()" height="143px" width="140px" />
+    </div>
+    <div class="header welcomeText">
+        <div class="adminHeading">
+            <h2>Welcome , Admin !</h2>
+        </div>
+        <input type="text" placeholder="Search Here" width="100%" class="search" />
+    </div>
+</div>
+<h3>All Students information</h3>
+    <table>
+		<thead>
+			<tr>
+				<th>Adm. Number</th>
+				<th>Name</th>
+				<th>Contact</th>
+				<th>Class</th>
+				<th>Bus Number</th>
+				<th>Fees Paid</th>
+				<th>Fees Due</th>
+				<th>Due Date</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" height="50px" width="50px" alt="Delete"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" alt="Edit"height="50px" width="50px" ></a>
+				</td>
+			</tr>
+            <tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" alt="Delete" height="50px" width="50px"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" alt="Edit"height="50px" width="50px" ></a>
+				</td>
+			</tr>
+            <tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" height="50px" width="50px" alt="Delete"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" height="50px" width="50px" alt="Edit"></a>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" height="50px" width="50px" alt="Delete"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" height="50px" width="50px" alt="Edit"></a>
+				</td>
+			</tr>
+            <tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" alt="Delete" height="50px" width="50px"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" height="50px" width="50px" alt="Edit"></a>
+				</td>
+			</tr>
+            <tr>
+				<td><a href="StudentInfo.html">521</a></td>
+				<td>Devyanshu</td>
+				<td>8218551295</td>
+				<td>10</td>
+				<td>21</td>
+				<td>Rs 800</td>
+				<td>Rs 1600</td>
+				<td>22/03/2023</td>
+				<td>
+					<a href="#"><img src="./resources/delete icon.png" alt="Delete" height="50px" width="50px"></a>
+					<a href="EditStudent.html"><img src="./resources/edit icon.png" alt="Edit" height="50px" width="50px"></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<a href="AddStudent.html" class="add-student"><img src="./resources/add Student icon.png" alt="Add Student" height="70px" width="70px"></a>
+</body>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</html>

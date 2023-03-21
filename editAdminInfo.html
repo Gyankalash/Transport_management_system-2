@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transport manegment System</title>
+    <link rel="stylesheet" href="editAdminInfo.css">
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="adminInfo.html">My Info</a>
+        <a href="AllStudents.html">All Students</a>
+        <a href="ChangePassword.html">Change Password</a>
+        <a href="#">Logout</a>
+    </div>
+    <div class="top">
+        <div class="image header">
+            <img src="./Resources/GIS Logo.png" alt="" onclick="openNav()" height="143px" width="140px" />
+        </div>
+        <div class="header welcomeText">
+            <div class="adminHeading">
+                <h2>Welcome , Admin !</h2>
+            </div>
+            <input type="text" placeholder="Search Here" width="100%" class="search" />
+        </div>
+    </div>
+    <h3>Edit Info Of Admin</h3>
+    <div class="adminEdit">
+        <form action="#" method="POST">
+            <div class="left">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required><br>
+
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required><br>
+
+                <label for="cabin">Cabin Number:</label>
+                <input type="text" name="cabin" id="cabin" required><br>
+            </div>
+
+            <div class="right">
+                <label for="image">Upload Image:</label>
+                <input type="file" name="image" id="image"><br>
+            </div>
+
+            <div class="clear">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>
